@@ -129,12 +129,14 @@
   <ItemGroup>
     <ClCompile Include="BaseList.cpp" />
     <ClCompile Include="ListElement.cpp" />
+    <ClCompile Include="myStack.cpp" />
     <ClCompile Include="Pet.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseList.h" />
     <ClInclude Include="ListElement.h" />
+    <ClInclude Include="myStack.h" />
     <ClInclude Include="Pet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -53,6 +53,11 @@ void BaseList::showAll()
 
 void BaseList::deleteLast()
 {
+	ListElement* temp;
+	temp = _head->_next;
+	delete[]_head;
+	_head = temp;
+
 }
 
 ListElement BaseList::getLast()

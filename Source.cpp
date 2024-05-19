@@ -18,6 +18,7 @@ using namespace std;
 #include "Pet.h"
 #include "BaseList.h"
 #include "ListElement.h"
+#include "myStack.h"
 
 
 int main() {
@@ -26,6 +27,7 @@ int main() {
 	dog1.show();
 	dog1.sound();
 	dog1.type();
+	cout << "--------------------LIST-----------------" << endl;
 
 	//Обычный список
 	ListElement el1(10);
@@ -36,6 +38,18 @@ int main() {
 	bList.add(&el2);
 	bList.add(&el3);
 	bList.showAll();
+	//стек
+	cout<<"--------------------STACK-----------------" << endl;
+	myStack Stack;
+	Stack.addItem(&el1);
+	Stack.show();
+	Stack.addItem(&el2);
+	Stack.show();
+	Stack.addItem(&el3);
+	Stack.show();
+	Stack.deleteLast();
+	Stack.show();
+	//очередь
 
 
 	return 0;
